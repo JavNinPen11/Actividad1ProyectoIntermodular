@@ -11,7 +11,7 @@ namespace Actividad1ProyectoIntermodular
         private string nombre;
         private int edad;
 
-        private Persona(string nombre, int edad)
+        public Persona(string nombre, int edad)
         {
             this.nombre = nombre;
             this.edad = edad;
@@ -19,6 +19,18 @@ namespace Actividad1ProyectoIntermodular
         public string MostrarDatos()
         {
             return $"Nombre: {nombre} y Edad: {edad} $";
+        }
+
+        public string EsMayorDeEdad()
+        {
+            if (edad >= 18)
+            {
+                return $"{nombre} es mayor de edad.";
+            }
+            else
+            {
+                return $"{nombre} es menor de edad.";
+            }
         }
     }
 }
