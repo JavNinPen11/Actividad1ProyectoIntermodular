@@ -8,5 +8,17 @@ namespace Actividad1ProyectoIntermodular
 {
     class Persona
     {
+        private string nombre;
+        private int edad;
+
+        private Persona(string nombre, int edad)
+        {
+            this.nombre = nombre;
+            this.edad = edad;
+        }
+        public string MostrarDatos()
+        {
+            return $"Nombre: {nombre} y Edad: {edad} $";
+        }
     }
 }
