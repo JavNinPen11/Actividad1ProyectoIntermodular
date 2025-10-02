@@ -18,7 +18,11 @@ namespace Actividad1ProyectoIntermodular
         }
         public string MostrarDatos()
         {
-            return $"Nombre: {nombre} y Edad: {edad} $";
+            return $"Nombre: {nombre} y Edad: {edad}";
+        }
+        public void SetNombre(string nombre)
+        {
+            this.nombre = nombre;
         }
 
         public string EsMayorDeEdad()
