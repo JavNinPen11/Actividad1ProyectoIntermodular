@@ -11,14 +11,18 @@ namespace Actividad1ProyectoIntermodular
         private string nombre;
         private int edad;
 
-        private Persona(string nombre, int edad)
+        public Persona(string nombre, int edad)
         {
             this.nombre = nombre;
             this.edad = edad;
         }
         public string MostrarDatos()
         {
-            return $"Nombre: {nombre} y Edad: {edad} $";
+            return $"Nombre: {nombre} y Edad: {edad}";
+        }
+        public void SetNombre(string nombre)
+        {
+            this.nombre = nombre;
         }
     }
 }
